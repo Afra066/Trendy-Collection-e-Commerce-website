@@ -1,0 +1,103 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}   
+
+/* Dresses Section */
+.dresses-section {
+    text-align: center;
+}
+
+.dresses-section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    background-color: #07686b;
+    font-family: monospace;
+    color: white;
+}
+
+.dresses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.dresses-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.dresses-card img {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+
+.dresses-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.dresses-card .price {
+    font-size: 18px;
+    color: #ff6600;
+}
+
+.dresses-card select,
+.dresses-card input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.dresses-card .add-to-cart {
+    background-color: #07686b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}

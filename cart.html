@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Dress Collection</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <!-- Products Section -->
+    <section id="dresses" class="dresses-section">
+        <h2>Our Collections</h2>
+        <div class="dresses-grid">
+            <!-- Product Card 1 -->
+            <div class="dresses-card">
+                <img src="S.jpg" alt="Black Frock Top">
+                <h3>Black Frock Top</h3>
+                <p class="price">Rs.4500/=</p>
+                <label for="size1">Size:</label>
+                <select id="size1" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color1">Color:</label>
+                <select id="color1" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity1">Quantity:</label>
+                <input type="number" id="quantity1" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(4500, 'Black Frock Top', 'size1', 'color1', 'quantity1')">Add to Cart</button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="dresses-card">
+                <img src="B.jpg" alt="Top">
+                <h3>Top</h3>
+                <p class="price">Rs.5000/=</p>
+                <label for="size2">Size:</label>
+                <select id="size2" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color2">Color:</label>
+                <select id="color2" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="white">white</option>
+                </select>
+                <label for="quantity2">Quantity:</label>
+                <input type="number" id="quantity2" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(5000, 'Top', 'size2', 'color2', 'quantity2')">Add to Cart</button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="dresses-card">
+                <img src="C.jpeg" alt="Office Wear">
+                <h3>Office Wear</h3>
+                <p class="price">Rs.2500/=</p>
+                <label for="size3">Size:</label>
+                <select id="size3" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color3">Color:</label>
+                <select id="color3" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity3">Quantity:</label>
+                <input type="number" id="quantity3" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(2500, 'Office Wear', 'size3', 'color3', 'quantity3')">Add to Cart</button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="dresses-card">
+                <img src="D.jpeg" alt="Summer Style">
+                <h3>Summer Style</h3>
+                <p class="price">Rs.5500/=</p>
+                <label for="size4">Size:</label>
+                <select id="size4" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color4">Color:</label>
+                <select id="color4" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity4">Quantity:</label>
+                <input type="number" id="quantity4" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(5500, 'Summer Style', 'size4', 'color4', 'quantity4')">Add to Cart</button>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="dresses-card">
+                <img src="E.jpeg" alt="Smookey Top">
+                <h3>Smookey Top</h3>
+                <p class="price">Rs.6000/=</p>
+                <label for="size5">Size:</label>
+                <select id="size5" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color5">Color:</label>
+                <select id="color5" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity5">Quantity:</label>
+                <input type="number" id="quantity5" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(6000, 'Smookey Top', 'size5', 'color5', 'quantity5')">Add to Cart</button>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="dresses-card">
+                <img src="F.jpeg" alt="Party Wear">
+                <h3>Party Wear</h3>
+                <p class="price">Rs.2550/=</p>
+                <label for="size6">Size:</label>
+                <select id="size6" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color6">Color:</label>
+                <select id="color6" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity6">Quantity:</label>
+                <input type="number" id="quantity6" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(2550, 'Party Wear', 'size6', 'color6', 'quantity6')">Add to Cart</button>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div class="dresses-card">
+                <img src="G.jpeg" alt="Plazo Shalwar">
+                <h3>Plazo Shalwar</h3>
+                <p class="price">Rs.8500/=</p>
+                <label for="size7">Size:</label>
+                <select id="size7" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color7">Color:</label>
+                <select id="color7" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity7">Quantity:</label>
+                <input type="number" id="quantity7" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(8500, 'Plazo Shalwar', 'size7', 'color7', 'quantity7')">Add to Cart</button>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div class="dresses-card">
+                <img src="H.jpg" alt="Traditional Shalwar">
+                <h3>Traditional Shalwar</h3>
+                <p class="price">Rs.7500/=</p>
+                <label for="size8">Size:</label>
+                <select id="size8" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color8">Color:</label>
+                <select id="color8" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity8">Quantity:</label>
+                <input type="number" id="quantity8" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(7500, 'Traditional Shalwar', 'size8', 'color8', 'quantity8')">Add to Cart</button>
+            </div>
+
+            <!-- Product Card 9 -->
+            <div class="dresses-card">
+                <img src="J.jpeg" alt="Full Net Frock">
+                <h3>Full Net Frock</h3>
+                <p class="price">Rs.8000/=</p>
+                <label for="size9">Size:</label>
+                <select id="size9" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color9">Color:</label>
+                <select id="color9" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity9">Quantity:</label>
+                <input type="number" id="quantity9" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(8000, 'Full Net Frock', 'size9', 'color9', 'quantity9')">Add to Cart</button>
+            </div>
+             <!-- Product Card 10 -->
+             <div class="dresses-card">
+                <img src="x.jpeg" alt="Denim Top">
+                <h3>Denim Top</h3>
+                <p class="price">Rs.9500/=</p>
+                <label for="size10">Size:</label>
+                <select id="size10" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color10">Color:</label>
+                <select id="color10" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity10">Quantity:</label>
+                <input type="number" id="quantity10" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(9500, 'Denim Top', 'size10', 'color10', 'quantity10')">Add to Cart</button>
+            </div>
+            <!-- Product Card 11 -->
+            <div class="dresses-card">
+                <img src="Z.jpeg" alt="Lehenga">
+                <h3>Lehenga</h3>
+                <p class="price">Rs.15000/=</p>
+                <label for="size11">Size:</label>
+                <select id="size11" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color11">Color:</label>
+                <select id="color11" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity11">Quantity:</label>
+                <input type="number" id="quantity11" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(15000, 'Lehenga', 'size11', 'color11', 'quantity11')">Add to Cart</button>
+            </div>
+            <!-- Product Card 12 -->
+            <div class="dresses-card">
+                <img src="ZD.jpg" alt="Frock Top">
+                <h3>Frock Top</h3>
+                <p class="price">Rs.6500/=</p>
+                <label for="size12">Size:</label>
+                <select id="size12" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color12">Color:</label>
+                <select id="color12" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity12">Quantity:</label>
+                <input type="number" id="quantity12" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(6500, 'Frock Top', 'size12', 'color12', 'quantity12')">Add to Cart</button>
+            </div>
+            <!-- Product Card 13 -->
+            <div class="dresses-card">
+                <img src="Q.jpg" alt="Laes Baggy Trendy Top">
+                <h3> Laes Baggy Trendy Top</h3>
+                <p class="price">Rs.9999/=</p>
+                <label for="size13">Size:</label>
+                <select id="size13" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color13">Color:</label>
+                <select id="color13" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity13">Quantity:</label>
+                <input type="number" id="quantity13" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(9999, 'Laes Baggy Trendy Top', 'size13', 'color13', 'quantity13')">Add to Cart</button>
+            </div>
+            <!-- Product Card 14 -->
+            <div class="dresses-card">
+                <img src="V.jpg" alt="Full Frock wedding shalwar">
+                <h3> Full Frock wedding shalwar</h3>
+                <p class="price">Rs.10000/=</p>
+                <label for="size14">Size:</label>
+                <select id="size14" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color14">Color:</label>
+                <select id="color14" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity14">Quantity:</label>
+                <input type="number" id="quantity14" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(10000, 'Full Frock wedding shalwar', 'size14', 'color14', 'quantity14')">Add to Cart</button>
+            </div>
+            <!-- Product Card 15 -->
+            <div class="dresses-card">
+                <img src="W.jpg" alt="Trendy white shalwar">
+                <h3>Trendy white shalwar</h3>
+                <p class="price">Rs.5990/=</p>
+                <label for="size15">Size:</label>
+                <select id="size15" name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="color15">Color:</label>
+                <select id="color15" name="color">
+                    <option value="Black">Black</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <label for="quantity15">Quantity:</label>
+                <input type="number" id="quantity15" name="quantity" min="1" max="10" value="0">
+                <button class="add-to-cart" onclick="addToCart(5990, 'Trendy white shalwar', 'size15', 'color15', 'quantity15')">Add to Cart</button>
+            </div>
+        
+            
+                        
+                    
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Connect with Us</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/username" class="facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/+94774862116" class="whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:fathima0606afra@gmail.com" class="gmail">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function addToCart(price, name, sizeId, colorId, quantityId) {
+            var size = document.getElementById(sizeId).value;
+            var color = document.getElementById(colorId).value;
+            var quantity = document.getElementById(quantityId).value;
+            var totalAmount = price * quantity;
+
+            alert('Added to cart:\n' + name + '\nSize: ' + size + '\nColor: ' + color + '\nQuantity: ' + quantity + '\nTotal: Rs.' + totalAmount);
+        }
+    </script>
+
+</body>
+</html>
